@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import data from "./data";
 class pocChart extends Component {
   constructor(props) {
     super(props);
@@ -64,6 +65,27 @@ class pocChart extends Component {
       ]
     };
   }
+  loadData = () => {
+    var qtes = data.map(item => {
+      return parseInt(item.qte);
+    });
+    console.log(qtes, " qtes");
+    var labels = data.map(item => {
+      return item.dim;
+    });
+    this.setState({
+      options: {
+        ...this.state.options,
+        xaxis: {
+          ...this.state.options.xaxis,
+          categories: labels
+        }
+      }
+    });
+    this.setState({
+      series: [{ name: "quantité", data: qtes }]
+    });
+  };
   onClick = () => {
     this.setState({
       options: {
@@ -89,6 +111,7 @@ class pocChart extends Component {
           width="100%"
         />
         <button onClick={this.onClick}>change</button>
+        <button onClick={this.loadData}>Load</button>
       </React.Fragment>
     );
   }

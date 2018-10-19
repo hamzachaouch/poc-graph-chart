@@ -1,0 +1,68 @@
+[
+  {
+    "id": "2",
+    "dim": "user::add",
+    "qte": "1"
+  },
+  {
+    "id": "3",
+    "dim": "user::edit",
+    "qte": "1"
+  },
+  {
+    "id": "4",
+    "dim": "user::enable",
+    "qte": "1"
+  },
+  {
+    "id": "5",
+    "dim": "user::delete",
+    "qte": "5"
+  },
+  {
+    "id": "17",
+    "dim": "configuration::update",
+    "qte": "20"
+  },
+  {
+    "id": "77",
+    "dim": "document::addComment",
+    "qte": "4"
+  },
+  {
+    "id": "94",
+    "dim": "document::added",
+    "qte": "2"
+  },
+  {
+    "id": "100",
+    "dim": "document::deleted",
+    "qte": "1"
+  },
+  {
+    "id": "121",
+    "dim": "document::preview",
+    "qte": "3"
+  },
+
+  {
+    "id": "153",
+    "dim": "workflow::add",
+    "qte": "3"
+  },
+  {
+    "id": "154",
+    "dim": "wokflow::delete",
+    "qte": "2"
+  },
+  {
+    "id": "159",
+    "dim": "wokflow::addTask",
+    "qte": "3"
+  },
+  {
+    "id": "162",
+    "dim": "wokflow::duplicate",
+    "qte": "1"
+  }
+]
